@@ -11,7 +11,7 @@ const User = require('../models/User') // Mongoose User model
 // @route   GET api/auth
 // @desc    Get logged in user
 // @access  Private 
-// NOTE: '/' corresponds to api/auth in this file
+// NOTE: '/' corresponds to api/auth route, thanks to router
 router.get('/', auth, (req,res) => {
   res.send("Get logged in user!");
 });
